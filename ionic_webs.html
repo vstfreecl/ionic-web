@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ionic Webs — Diseño moderno y minimalista</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --thunder:#505160;
+      --waterfall:#68829E;
+      --moss:#AEBD38;
+      --meadow:#598234;
+      --bg:#ffffff;
+      --text:#333333;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:Montserrat, sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+    header{
+      position:fixed;top:0;left:0;right:0;
+      background:var(--thunder);
+      color:#fff;
+      display:flex;justify-content:space-between;align-items:center;
+      padding:16px 32px;z-index:1000;
+    }
+    header .brand{font-weight:800;font-size:20px;}
+    nav a{
+      margin-left:20px;text-decoration:none;
+      color:#fff;font-weight:600;transition:color .3s;
+    }
+    nav a:hover{color:var(--moss);}
+    .container{max-width:1100px;margin:0 auto;padding:100px 24px 40px;}
+    .hero{
+      text-align:center;
+      padding:120px 20px 80px;
+      background:var(--waterfall);
+      color:#fff;
+    }
+    .hero h1{font-size:clamp(32px,5vw,56px);margin-bottom:16px;}
+    .hero p{font-size:18px;max-width:600px;margin:0 auto;}
+    section{padding:80px 20px;}
+    h2{text-align:center;margin-bottom:40px;font-size:28px;color:var(--thunder);}
+    .grid-3{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));}
+    .card{
+      background:#f8f8f8;
+      border-radius:16px;
+      padding:24px;
+      text-align:center;
+      transition:transform .3s;
+    }
+    .card:hover{transform:translateY(-5px);}
+    .card h3{margin-bottom:12px;color:var(--meadow);}
+    .portfolio img{width:100%;border-radius:12px;}
+    footer{
+      background:var(--thunder);
+      color:#fff;
+      text-align:center;
+      padding:20px;
+      font-size:14px;
+    }
+    @media(max-width:768px){
+      header{flex-direction:column;align-items:flex-start;}
+      nav{margin-top:8px;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">Ionic Webs</div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="inicio" class="hero">
+    <h1>Diseño web elegante y minimalista</h1>
+    <p>En Ionic Webs creamos páginas modernas, claras y profesionales que transmiten confianza y sofisticación.</p>
+  </section>
+
+  <section id="servicios" class="container">
+    <h2>Servicios</h2>
+    <div class="grid-3">
+      <div class="card">
+        <h3>Landing Pages</h3>
+        <p>Páginas simples, enfocadas en resultados, ideales para campañas y negocios.</p>
+      </div>
+      <div class="card">
+        <h3>Sitios Corporativos</h3>
+        <p>Diseños minimalistas y profesionales para empresas que quieren presencia online.</p>
+      </div>
+      <div class="card">
+        <h3>Mantenimiento</h3>
+        <p>Actualizaciones y soporte para que tu web siempre esté al día.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="proyectos" class="container">
+    <h2>Proyectos</h2>
+    <div class="grid-3 portfolio">
+      <img src="https://placehold.co/600x400/68829E/ffffff" alt="Proyecto 1">
+      <img src="https://placehold.co/600x400/AEBD38/ffffff" alt="Proyecto 2">
+      <img src="https://placehold.co/600x400/598234/ffffff" alt="Proyecto 3">
+    </div>
+  </section>
+
+  <section id="contacto" class="container">
+    <h2>Contacto</h2>
+    <div class="card" style="max-width:500px;margin:0 auto;">
+      <p>¿Quieres una web moderna y profesional? Escríbenos:</p>
+      <p>Email: <a href="mailto:contacto@ionicwebs.com">contacto@ionicwebs.com</a></p>
+      <p>WhatsApp: <a href="https://wa.me/56912345678">+56 9 1234 5678</a></p>
+      <div style="margin-top:12px;">
+        <a href="mailto:contacto@ionicwebs.com" style="background:var(--meadow);color:#fff;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:600;">Enviar mensaje</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Ionic Webs — Todos los derechos reservados
+  </footer>
+</body>
+</html>
