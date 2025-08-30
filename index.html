@@ -7,23 +7,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     :root{
-      --thunder:#505160;
-      --waterfall:#68829E;
-      --moss:#AEBD38;
-      --meadow:#598234;
-      --bg:#ffffff;
-      --text:#333333;
+      --dark:#001F29;
+      --petrol:#42767A;
+      --aqua:#6DA49C;
+      --soft:#9FBFB9;
+      --sand:#E2E6DC; /* reemplazo más moderno y fresco */
+      --text:#001F29;
     }
     *{box-sizing:border-box;margin:0;padding:0}
     body{
       font-family:Montserrat, sans-serif;
-      background:var(--bg);
+      background:var(--soft);
       color:var(--text);
       line-height:1.6;
     }
     header{
       position:fixed;top:0;left:0;right:0;
-      background:var(--thunder);
+      background:var(--dark);
       color:#fff;
       display:flex;justify-content:space-between;align-items:center;
       padding:16px 32px;z-index:1000;
@@ -33,31 +33,31 @@
       margin-left:20px;text-decoration:none;
       color:#fff;font-weight:600;transition:color .3s;
     }
-    nav a:hover{color:var(--moss);}
+    nav a:hover{color:var(--aqua);}
     .container{max-width:1100px;margin:0 auto;padding:100px 24px 40px;}
     .hero{
       text-align:center;
       padding:120px 20px 80px;
-      background:var(--waterfall);
+      background:var(--petrol);
       color:#fff;
     }
     .hero h1{font-size:clamp(32px,5vw,56px);margin-bottom:16px;}
     .hero p{font-size:18px;max-width:600px;margin:0 auto;}
     section{padding:80px 20px;}
-    h2{text-align:center;margin-bottom:40px;font-size:28px;color:var(--thunder);}
+    h2{text-align:center;margin-bottom:40px;font-size:28px;color:var(--aqua);}
     .grid-3{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));}
     .card{
-      background:#f8f8f8;
+      background:var(--sand);
       border-radius:16px;
       padding:24px;
       text-align:center;
       transition:transform .3s;
     }
     .card:hover{transform:translateY(-5px);}
-    .card h3{margin-bottom:12px;color:var(--meadow);}
+    .card h3{margin-bottom:12px;color:var(--petrol);}
     .portfolio img{width:100%;border-radius:12px;}
     footer{
-      background:var(--thunder);
+      background:var(--dark);
       color:#fff;
       text-align:center;
       padding:20px;
@@ -106,9 +106,9 @@
   <section id="proyectos" class="container">
     <h2>Proyectos</h2>
     <div class="grid-3 portfolio">
-      <img src="https://placehold.co/600x400/68829E/ffffff" alt="Proyecto 1">
-      <img src="https://placehold.co/600x400/AEBD38/ffffff" alt="Proyecto 2">
-      <img src="https://placehold.co/600x400/598234/ffffff" alt="Proyecto 3">
+      <img src="https://placehold.co/600x400/42767A/ffffff" alt="Proyecto 1">
+      <img src="https://placehold.co/600x400/6DA49C/ffffff" alt="Proyecto 2">
+      <img src="https://placehold.co/600x400/E2E6DC/001F29" alt="Proyecto 3">
     </div>
   </section>
 
@@ -119,7 +119,7 @@
       <p>Email: <a href="mailto:contacto@ionicwebs.com">contacto@ionicwebs.com</a></p>
       <p>WhatsApp: <a href="https://wa.me/56952344142">+56 9 52344142</a></p>
       <div style="margin-top:12px;">
-        <a href="mailto:contacto@ionicwebs.com" style="background:var(--meadow);color:#fff;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:600;">Enviar mensaje</a>
+        <a href="mailto:contacto@ionicwebs.com" style="background:var(--aqua);color:#fff;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:600;">Enviar mensaje</a>
       </div>
     </div>
   </section>
